@@ -12,6 +12,24 @@ body {
   overflow: hidden;
 }
 
+button {
+  -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   border-radius: 50px;
+   border: none;
+   text-align: center;
+   color: #FFFFFF;
+   font-size: 40px;
+   font-weight: 200;
+   padding: 60px;
+   background-color: #707070;
+   border: solid #707070 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
 .container {
   width: 100%;
   height: 100%;
