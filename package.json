@@ -1,0 +1,21 @@
+{
+  "name": "pawtastic",
+  "version": "1.0.0",
+  "description": "Frontend test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "Reem",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "node-json2html": "^1.4.0",
+    "rss-parser": "^3.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
