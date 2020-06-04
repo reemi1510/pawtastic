@@ -12,7 +12,7 @@ body {
   overflow: hidden;
 }
 
-button {
+/* button {
   -webkit-border-radius: 50px;
    -moz-border-radius: 50px;
    border-radius: 50px;
@@ -28,7 +28,7 @@ button {
    display: inline-block;
    cursor: pointer;
    text-align: center;
-}
+} */
 
 .container {
   width: 100%;
@@ -121,6 +121,7 @@ section#services-details {
 section#reviews {
   background: #545871;
   color: #FFFFFF;
+  flex-flow: column;
 }
 section#contact {
   background: #F7ECEB;
@@ -163,6 +164,7 @@ section#contact {
 .reviews-text {
   width: 60vw;
   align-self: center;
+  padding-top: 15%;
 }
 .contact-text {
   width: 60vw;
@@ -171,4 +173,19 @@ section#contact {
 .contact-text a {
   /* text-decoration: none; */
   color: #545871;
+}
+
+#story-list {
+  list-style: none;
+  width: 60vw;
+  align-self: center;
+  padding-bottom: 20%;
+}
+.story a {
+  color: #FFFFFF;
+  text-decoration: none!important;
+  font-size: 1.5rem;
+}
+.story a:hover {
+  color: skyblue;
 }

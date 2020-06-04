@@ -8,6 +8,26 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var url = 'http://localhost:5000/rss';
+      console.log('URL: ', url);
+
+      getRss(url);
+    });
+
+    function getRss(url) {
+      $.get(url, function(data) {
+        console.log('data: ', data);
+
+        $.each(data, function(i, data) {
+          $("#story-list").append("<li class=\"story\"><a href="+data.link+">"+data.title+"</a></li>")
+        })
+      })
+    }
+  </script>
 </head>
 <body>
 
@@ -65,10 +85,11 @@
   <section id="reviews">
     <div class="reviews-text">
       <h1>Pets (and their humans) love us</h1>
+      <h1>Check out our stories</h1>
     </div>
-    <div class="review">
-      <!-- TODO: RSS feed here -->
-    </div>
+    <ul id="story-list">
+      <!-- RSS feed here -->
+    </ul>
   </section>
 
   <section id="contact">
